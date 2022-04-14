@@ -1,9 +1,5 @@
 package Dog
 
-type Animal interface {
-	Sounds() string
-}
-
 type Dog struct {
 	name string
 }

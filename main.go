@@ -1,8 +1,11 @@
 package main
 
-import Dog "github.com/fish895623/hello/modules"
+import (
+	Dog "github.com/fish895623/hello/modules"
+	IAnimal "github.com/fish895623/hello/modules/interfaces"
+)
 
 func main() {
-	var a Dog.Animal = Dog.NewDog("asdf")
-	println(a.Sounds())
+	var dog IAnimal.Animal = Dog.NewDog("asdf")
+	println(dog.Sounds())
 }
