@@ -1,10 +1,8 @@
 package main
 
-import (
-	"github.com/fish895623/hello"
-)
+import "github.com/fish895623/hello/modules"
 
 func main() {
-	var a hello.Animal = hello.NewDog("asdf")
+	var a Dog.Animal = Dog.NewDog("asdf")
 	println(a.Sounds())
 }
